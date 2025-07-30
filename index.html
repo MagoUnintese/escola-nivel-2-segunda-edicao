@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+    </head>
+
+    <body>
+        <div class="efeitoParallax" id="primeiraParte">
+            <section>
+                <h1 id="hello">Hello World</h1>
+                <button onclick="mudarTexto()">Mudar Texto</button>
+            </section>
+        
+
+            <section id="containerModoNoturno">
+                <h2>Modo Noturno</h2>
+                <button id="botaoModoNoturno">Modo Noturno</button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius optio similique veritatis cupiditate reiciendis sed illum minima magni quasi modi mollitia, ipsa accusantium sapiente eligendi! Beatae minima tempore rerum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente dolore consectetur sequi veritatis voluptatum ex nesciunt harum nulla magni. Harum rem at obcaecati ducimus praesentium eaque, porro velit quis.</p>
+            </section>
+
+
+        </div>
+
+        <div class="efeitoParallax" id="segundaParte">
+            <section id="containerCarrossel">
+                <h2>Carrossel de Imagens</h2>
+                <div class="carrosselImagens">
+                    <div class="slideCarrossel">
+                        <img width="100%" src="img/foto-paisagem-natural.webp" alt="Paisagem Natural">
+                        <img width="100%" src="img/fotografia-de-paisagens-1.webp" alt="Foto de Paisagem">
+                        <img width="100%" src="img/fotografia-de-paisagens.webp" alt="Foto de Paisagem 2">
+                    </div>
+                    <button class="voltaCarrossel"><</button>
+                    <button class="avancaCarrossel">></button>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius optio similique veritatis cupiditate reiciendis sed illum minima magni quasi modi mollitia, ipsa accusantium sapiente eligendi! Beatae minima tempore rerum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente dolore consectetur sequi veritatis voluptatum ex nesciunt harum nulla magni. Harum rem at obcaecati ducimus praesentium eaque, porro velit quis.</p>
+            </section>
+        </div>
+
+        <div class="efeitoParallax" id="terceiraParte">
+            <section id="containerFormulario">
+                <h2>Formulário</h2>
+                <form id="meuFormulario">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                    <span class="erro" id="erroNome"></span>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                    <span class="erro" id="erroEmail"></span>
+
+                    <button type="submit">Enviar</button>
+                    <p id="mensagemFormulario"></p>
+                </form>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius optio similique veritatis cupiditate reiciendis sed illum minima magni quasi modi mollitia, ipsa accusantium sapiente eligendi! Beatae minima tempore rerum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente dolore consectetur sequi veritatis voluptatum ex nesciunt harum nulla magni. Harum rem at obcaecati ducimus praesentium eaque, porro velit quis.</p>
+            </section>
+        </div>
+
+        <div class="testeParallax" id="parallaxJs"></div>
+        <div style="height:1080px;">Teste do efeito com o JS</div>
+    </body>
+
+    <script src="script.js"></script>
+</html>

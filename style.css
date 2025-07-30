@@ -1,0 +1,157 @@
+:root{
+    --cor-fundo: #fff;
+    --cor-titulo: #000;
+    --cor-texto: #000;
+    --cor-fundo-form: #777777;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
+
+h1{
+    color: var(--cor-titulo);
+}
+
+h2{
+    color: var(--cor-texto)
+}
+
+section{
+    width: 50%;
+    margin: 0px auto;
+}
+
+/*Parallax*/
+#primeiraParte{
+    background-image: url(./img/background_mago.png);
+}
+
+#segundaParte{
+    background-image: url(./img/background_mago_2.png);
+}
+
+#terceiraParte{
+    background-image: url(./img/background_mago_3.png);
+}
+
+.efeitoParallax{
+    height: 900px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carrosselImagens{
+    width: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideCarrossel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slideCarrossel img{
+    width: 100%;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+.avancaCarrossel, .voltaCarrossel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--cor-fundo);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 10%;
+    font-size: 1.5rem;
+
+}
+
+.avancaCarrossel{
+    right: 10px;
+}
+
+.voltaCarrossel{
+    left: 10px;
+}
+
+.avancaCarrossel:hover, .voltaCarrossel:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+form{
+    background-color: var(--cor-fundo-form);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid var(--cor-texto);
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--cor-texto);
+}
+
+form input[type="text"], form input[type="email"]{
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid var(--cor-texto);
+    color: var(--cor-texto);
+}
+
+.erro{
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -3px;
+    margin-bottom: 10px;
+    display: block;
+    height: 1.2em;
+}
+
+#mensagemFormulario{
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+body.modoNoturno{
+    --cor-fundo: #000;
+    --cor-texto: #fff;
+    --cor-titulo: #fff;
+    --cor-fundo-form: #212121;
+}
+
+
+.testeParallax{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./img/2.jpg);
+    z-index: -1;
+}
